@@ -2,12 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EasyBank</title>
   </head>
-  <body>
-    <h1 class="text-red-700 text-3xl">Hello World</h1>
+  <body class="mx-auto text-dark-blue bg-white">
+    <!-- NAVBAR -->
+    <nav class="mx-8 p-6 bg-white">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="/" class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white hover:opacity-75 transition-opacity" aria-label="Go to homepage"><img src="./assets/logo.svg" alt="HomeSmart" width="200" class="w-48 md:w-64 lg:w-72"></a>
+        <button id="menu" aria-expanded="false" aria-label="Open Menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white text-neutral-900 hover:text-neutral-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" id="menu-closed" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="menu-open" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>                    
+        </button>
+        <div role="menubar" class="hidden flex-col gap-4 z-40 justify-center absolute right-0 left-0 top-16 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:w-full lg:ml-10 ">
+          <a role="menuitem" href="/" class=" py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white text-dark-blue hover:text-neutral-600 transition-colors">Home</a>
+          <a role="menuitem" href="/" class=" py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white text-dark-blue hover:text-neutral-600 transition-colors">About</a>
+          <a role="menuitem" href="/" class=" py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white text-dark-blue hover:text-neutral-600 transition-colors">Contact</a>
+          <a role="menuitem" href="/" class=" py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white text-dark-blue hover:text-neutral-600 transition-colors">Blog</a>
+          <a role="menuitem" href="/" class=" py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-white text-dark-blue hover:text-neutral-600 transition-colors lg:mr-auto">Careers</a>
+          <a role="menuitem" href="/" class=" py-2 px-6 rounded-3xl shadow-xl focus:outline-none focus-visible:ring-4 ring-neutral-900 transition-shadow ring-offset-4 ring-offset-white text-white hidden lg:block bg-gradient-to-r from-lime-green to-bright-cyan">Request Invite</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section>
+      
+    </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
